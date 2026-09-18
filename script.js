@@ -17,7 +17,7 @@ if (close) {
 }
 
 // --- 2. CONFIGURACIÓN Y GESTIÓN DEL CARRITO ---
-const PHONE_NUMBER = "573028434789";
+const PHONE_NUMBER = "573146742892";
 
 class Cart {
   constructor() {
