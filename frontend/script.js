@@ -1,5 +1,5 @@
 // ⚠️ REEMPLAZA ESTA URL CON TU URL REAL DE RENDER (ej. https://mendez-motos-api.onrender.com)
-const API_URL = 'https://mendez-motos.onrender.com/contact.html'; 
+const API_URL = 'https://mendez-motos.onrender.com'; 
 
 let esModoRegistro = false;
 
