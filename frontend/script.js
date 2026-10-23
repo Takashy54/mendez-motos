@@ -66,32 +66,29 @@ if (authForm) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  //1. Obtener el usuario guardado tras el Login
-  const usuarioLogueado = localStorage.getItem('usuarioLogueado');
-  const infoCliente = document.getElementById('info-cliente');
-  const btnWhatsaap = document.getElementById('checkout-whatsapp-btn');
+    // 1. Obtener el usuario guardado tras el Login
+    const usuarioLogueado = localStorage.getItem('usuarioLogueado');
+    const infoCliente = document.getElementById('info-cliente');
+    const btnWhatsapp = document.getElementById('checkout-whatsapp-btn');
 
-  //2. si el uso esta registrado, mostrar su nombre en el resumen
-if(usuarioLogueado && infoCliente){
-  infoCliente.innerHTML = `<strong>Cliente autenticado:</strong>${usuarioLogueado}`;
-}
+    // 2. Si el usuario está registrado, mostrar su nombre en el resumen
+    if (usuarioLogueado && infoCliente) {
+        infoCliente.innerHTML = `<strong>Cliente autenticado:</strong> ${usuarioLogueado}`;
+    }
 
-//3. Enviar mensaje personalizado por WhatsApp 
-  if (btnWhatsaap) {
-    btnWhatsaap.addEventListener('click', () => {
-      const cliente = usuarioLogueado ? usuarioLogueado: 'Cliente no registrado';
-      const total = document.getElementById('cart-grand-total') ? .textContent || '$0';
+    // 3. Enviar mensaje personalizado por WhatsApp
+    if (btnWhatsapp) {
+        btnWhatsapp.addEventListener('click', () => {
+            const cliente = usuarioLogueado ? usuarioLogueado : 'Cliente no registrado';
+            const total = document.getElementById('cart-grand-total')?.textContent || '$0';
 
+            const numeroTelefono = '573209626370'; // Tu número de atención
+            const mensaje = encodeURIComponent(`Hola MENDEZ MOTOS, soy ${cliente}. Me gustaría realizar la compra de mi carrito. Total a pagar: ${total}`);
 
-      const numeroTelefono = '573209626370'; //Numero de atencion
-
-      const mensaje = encodeURIComponent(`Hola MENDEZ MOTOS, soy${cliente}. Me gustaria realizar la compra de mi carrito. Total a pagar:${total}`);
-
-      //Abrir WhatsAp con el pedido listo
-      window.open(`https://wa.me/${numeroElefono}?text=${mensaje}`, '_blank');
-      
-    });
-  }
+            // Abrir WhatsApp con el pedido listo
+            window.open(`https://wa.me/${numeroTelefono}?text=${mensaje}`, '_blank');
+        });
+    }
 });
 
 
