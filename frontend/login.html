@@ -24,7 +24,35 @@
 </section>
 
 <section class="section-p1" style="display:flex; justify-content: center; align-items: center; min-height: 60vh;">
-  <div id="auth-container" style="width: 100%"; ></div>
+  <div id="auth-container" style="width: 100%; max-width: 400px; padding: 30px; border: 1px solid #ccc; border-radius: 8px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+    <h2 id="auth-title" style="text-align: center; margin-bottom: 20px;">Iniciar Secion</h2>
+    
+<form id="auth-form">
+  <div style="margin-bottom: 15px;">
+    <label for="usuario" style="display: block; margin-bottom: 5px; font-weight: bold">Usuario:</label>
+
+    <input type="text" id="usuario" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+  </div>
+
+  <div style="margin-bottom: 15px;">
+
+    <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold">Contraseña</label>
+
+    <input type="password" id="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+  </div>
+
+<bottom type="submit" id="btn-submit" style="width: 100%; padding: 12px; background-color: #088178; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">
+  Entrar</bottom>
+  </form>
+
+<p style="margin-top: 20px; text-align: center; font-size: 14px;">
+  <span id="toggle-text">¿No tienes cuenta?</span>
+<a href="#" id="toggle-auth" style="color:#088178; font-weight: bold; text-decoration: none;">Registrate aqui</a>
+  
+</p>
+    
+  </div>
   
 </section>
     
