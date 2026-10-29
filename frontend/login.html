@@ -1,70 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesion - MENDEZ MOTOS</title>
+    <title>Iniciar Sesión - MENDEZ MOTOS</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-  </head>
-  <body>
+</head>
+<body>
+
     <section id="header">
-      <a href="index.html"><img src="logo.jpg" class="logo" alt="Logo"></a>
-  <div>
-    <ul id="navbar">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="shop.html">Compra</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">Acerca de</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="">Acceso</a></li>
-      <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-      <a href="#" id="close"><i class="far fa-times"></i></a>
-    </ul>
-  </div> 
-</section>
+        <a href="index.html"><img src="logo.jpg" class="logo" alt="Logo"></a>
 
-<section class="section-p1" style="display:flex; justify-content: center; align-items: center; min-height: 60vh;">
-  <div id="auth-container" style="width: 100%; max-width: 400px; padding: 30px; border: 1px solid #ccc; border-radius: 8px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Compra</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a class="active" href="login.html">Acceso</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
 
-    <h2 id="auth-title" style="text-align: center; margin-bottom: 20px;">Iniciar Secion</h2>
-    
-<form id="auth-form">
-  <div style="margin-bottom: 15px;">
-    <label for="usuario" style="display: block; margin-bottom: 5px; font-weight: bold">Usuario:</label>
+    <section class="section-p1" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+        <div id="auth-container" style="width: 100%; max-width: 400px; padding: 30px; border: 1px solid #ccc; border-radius: 8px; background: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 id="auth-title" style="text-align: center; margin-bottom: 20px;">Iniciar Sesión</h2>
+            
+            <form id="auth-form">
+                <div style="margin-bottom: 15px;">
+                    <label for="usuario" style="display: block; margin-bottom: 5px; font-weight: bold;">Usuario:</label>
+                    <input type="text" id="usuario" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold;">Contraseña:</label>
+                    <input type="password" id="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
 
-    <input type="text" id="usuario" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-  </div>
+                <button type="submit" id="btn-submit" style="width: 100%; padding: 12px; background-color: #088178; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                    Entrar
+                </button>
+            </form>
 
-  <div style="margin-bottom: 15px;">
+            <p style="margin-top: 20px; text-align: center; font-size: 14px;">
+                <span id="toggle-text">¿No tienes cuenta?</span> 
+                <a href="#" id="toggle-auth" style="color: #088178; font-weight: bold; text-decoration: none;">Regístrate aquí</a>
+            </p>
+        </div>
+    </section>
 
-    <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold">Contraseña</label>
-
-    <input type="password" id="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
-  </div>
-
-<bottom type="submit" id="btn-submit" style="width: 100%; padding: 12px; background-color: #088178; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">
-  Entrar</bottom>
-  </form>
-
-<p style="margin-top: 20px; text-align: center; font-size: 14px;">
-  <span id="toggle-text">¿No tienes cuenta?</span>
-<a href="#" id="toggle-auth" style="color:#088178; font-weight: bold; text-decoration: none;">Registrate aqui</a>
-  
-</p>
-    
-  </div> 
-    
- </section>
-
-<footer class="section-p1">
-  <div class="col">
-    <h4>Contacto</h4>
-    <p><strong>Direccion:</strong>calle 130 D Bis 104-03 Bogota Colombia</p>
-    <p><strong>Telefono:</strong>3209626370</p>
-  </div>   
-</footer>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><strong>Direccion: </strong>calle 130 D Bis 104 - 03 Bogota Colombia</p>
+            <p><strong>Telefono: </strong>3209626370</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
